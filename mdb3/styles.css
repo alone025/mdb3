@@ -41,7 +41,9 @@ body {
 
   display: inline-block;
   padding-bottom: 48px;
-  padding-top: 30px;
+  padding-top: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-family: Cactus;
 
   background: linear-gradient(180deg, #c3b395 53.17%, #8b8062 100%);
@@ -167,8 +169,10 @@ body {
 @media screen and (max-width: 900px) {
   .card h1 {
     font-size: 100px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 43px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .horizontal-line,
@@ -196,6 +200,10 @@ body {
     font-size: 80px;
     padding-top: 15px;
     padding-bottom: 30px;
+
+    
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .horizontal-line,
@@ -223,6 +231,9 @@ body {
     font-size: 60px;
     padding-top: 10px;
     padding-bottom: 20px;
+
+    padding-left: 11px;
+    padding-right: 11px;
   }
 
   .horizontal-line {
