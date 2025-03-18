@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDB UI Page</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
-      rel="stylesheet"
-    />
+   
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./normalize.css" />
@@ -24,7 +21,7 @@
     <div class="container" style="height: 100vh">
       <div class="card">
         <h1 class="title">Ввод данных</h1>
-        <form class="form_inputs">
+        <form onsubmit="" class="form_inputs">
           <input
             type="text"
             id="inputName"
@@ -39,9 +36,20 @@
             placeholder="Ваш запрос на игру"
           />
 
-          <button class="btn form_inputs_button">Сохранить</button>
+          <button onclick="disappear(this)" class="btn form_inputs_button">Сохранить</button>
         </form>
       </div>
     </div>
+
+    <script>
+      function disappear(button) {
+        button.classList.add("disappear");
+        setTimeout(() => {
+          button.style.display = "none";
+        }, 600);
+      }
+      
+      
+    </script>
   </body>
 </html>

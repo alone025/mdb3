@@ -20,9 +20,23 @@
        
 
         <div class="btn_div">
-            <button class="btn btn_div_button">Создать игру</button>
+            <button onclick="disappear(this)" class="btn btn_div_button">Создать игру</button>
         </div>
     
     </div>
+
+    <script>
+      function disappear(button) {
+        button.classList.add("disappear");
+        setTimeout(() => {
+          button.style.display = "none";
+
+        }, 600);
+        location.reload()
+
+      }
+   
+      
+    </script>
   </body>
 </html>
