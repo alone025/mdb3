@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Cactus;
+  src: url(./CactusClassicalSerif-Regular.woff2);
+}
+
+body {
+  background: url("./mdbimage.png") no-repeat center center/cover fixed;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: transparent;
+  margin-top: 152px;
+}
+
+.overlay {
+  background: rgba(3, 10, 9, 0.54);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.card h1 {
+  font-size: 150px;
+  font-weight: normal;
+
+  margin-bottom: 0px;
+  margin-top: 0;
+
+  display: inline-block;
+  padding-bottom: 48px;
+  padding-top: 30px;
+  font-family: Cactus;
+
+  background: linear-gradient(180deg, #c3b395 53.17%, #8b8062 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25),
+    -30px 30px 30px rgba(0, 0, 0, 0.2), -45px 45px 70px rgba(0, 0, 0, 0.2),
+    8px -8px 10px rgba(255, 255, 255, 0.07);
+}
+
+.btn_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.btn {
+  border-radius: 40px;
+  font-size: 24px;
+  background: linear-gradient(184deg, #49986d 2.41%, #2c5139 81.37%);
+  color: white;
+  border: 2px solid #fff;
+  text-transform: capitalize;
+  transition: background-color 0.3s;
+  font-family: Cactus;
+
+  max-width: 400px;
+  width: 100%;
+  height: 56px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #00695c;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.horizontal-line,
+.vacantizonal-line {
+  height: 6px;
+  background: linear-gradient(90deg, #b8aa8c 0%, #424031 53%, #a9a98e 99.5%);
+}
+
+.horizontal-line {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .card h1 {
+    font-size: 120px;
+  }
+
+  .card {
+    margin-top: 122px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card h1 {
+    font-size: 110px;
+  }
+
+  .card {
+    margin-top: 112px;
+  }
+
+  .btn_div{
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card h1 {
+    font-size: 100px;
+    padding-top: 25px;
+    padding-bottom: 43px;
+  }
+
+  .horizontal-line,
+  .vacantizonal-line {
+    height: 5px;
+  }
+
+  .card {
+    margin-top: 92px;
+  }
+
+  .form-control {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .btn {
+    font-size: 20px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card h1 {
+    font-size: 80px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .horizontal-line,
+  .vacantizonal-line {
+    height: 3px;
+  }
+
+  .horizontal-line {
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    font-size: 18px;
+    height: 46px;
+  }
+  .btn {
+    font-size: 18px;
+    height: 46px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card h1 {
+    font-size: 60px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .horizontal-line {
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    margin-top: 30px;
+    font-size: 15px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .btn {
+    font-size: 15px;
+    height: 40px;
+  }
+
+
+  .btn_div{
+    margin-top: 40px;
+  }
+}
